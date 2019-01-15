@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="15dp">
+
+        <com.gigamole.library.ShadowLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:sl_shadow_angle="90"
+            app:sl_shadow_color="#1723ce"
+            app:sl_shadow_distance="10dp"
+            app:sl_shadow_radius="20dp"
+            app:sl_shadowed="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/rate_us_background"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/ratingImage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="15dp"
+                    android:elevation="7dp"
+                    android:padding="5dp"
+                    android:src="@drawable/s" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="New Update is Available!!"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="15dp"
+                    android:text="For the best experience &amp; Fixed bugs and improvement in  please use the latest version of the app."
+                    android:textAlignment="center"
+                    android:textColor="#413b3b"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_background"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:padding="5dp"
+                    android:text="  Update  "
+                    android:textColor="#fff"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </com.gigamole.library.ShadowLayout>
+    </RelativeLayout>
+</LinearLayout>
